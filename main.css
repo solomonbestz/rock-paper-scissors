@@ -1,0 +1,170 @@
+
+/* General Styling */
+
+
+/* Style Game Board */
+.container{
+    margin: 50px;
+    padding: 30px;
+    position: relative;
+    border: 2px solid orange;
+    border-radius: 4px 4px;
+}
+
+/* STyle the score board */
+.score-board{
+    display: flex;
+    background: orange;
+    border: 2px solid green;
+    padding: 5px 50px;
+    justify-content:  space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#computer-score{
+    color: green;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#player-score{
+    color: green;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Style the game play */
+.game-play{
+    display: flex;
+    margin-left: 25%;
+    width: 50%;
+    justify-content:  space-between;
+}
+
+img{
+    width: 100px;
+    height: 70px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+/* Style the game choice */
+.game-choice{
+    display: flex;
+    margin-left: 25%;
+    width: 50%;
+    justify-content:  space-between;
+}
+
+/* Style result */
+.announce{
+    text-align: center;
+    font-family: 'Sofia'; 
+    font-size: 22px;
+    color: green;
+}
+
+
+/* Style the button */
+.center-button{
+    position: absolute;
+    bottom: 1%;
+    left: 37%;
+}
+.button{
+    background: green;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 4px 4px;
+    border: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 10px;
+        height: 100%;
+    }
+    /* Style score board */
+    .score-board{
+        font-size: 10px;
+        text-align: center;
+        padding: 5px 5px;
+    }
+    #computer-score{
+        font-size: 16px;
+    }
+    #player-score{
+        font-size: 16px;
+    }
+
+    /* Style the game play */
+    .game-play{
+        display: flex;
+        margin-left: 15%;
+        width: 70%;
+        justify-content:  space-between;
+    }
+
+    img{
+        width: 50px;
+        height: 40px;
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    /* Style the game choice */
+    .game-choice{
+        display: flex;
+        margin-left: 15%;
+        font-size: 10px;
+        width: 70%;
+        justify-content:  space-between;
+    }
+
+    /* Style result */
+    .announce{
+        margin-bottom: 20%;
+        font-family: 'Sofia'; 
+        font-size: 10px;
+        color: green;
+    }
+
+    /* Style the button */
+    .center-button{
+        position: absolute;
+        bottom: 1%;
+        left: 21%;
+    }
+    .button{
+        background: green;
+        width: 50px;
+        height: 30px;
+        font-size: 10px;
+        border-radius: 4px 4px;
+        border: none;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Style the game play */
+    .game-play{
+        display: flex;
+        margin-left: 25%;
+        width: 50%;
+        justify-content:  space-between;
+    }
+
+    img{
+        width: 100px;
+        height: 70px;
+        border-radius: 3px 3px 3px 3px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}

@@ -243,7 +243,7 @@ img{
     }
 
     img{
-        width: 100px;
+        width: 120px;
         height: 80px;
         border-radius: 3px 3px 3px 3px;
     }
@@ -269,7 +269,7 @@ img{
     .center-button{
         position: absolute;
         bottom: 1%;
-        left: 18%;
+        left: 5%;
     }
     .button{
         background: green;

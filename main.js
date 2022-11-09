@@ -23,8 +23,27 @@ possible_choices.forEach(possible_choice => possible_choice.addEventListener('cl
     generate_computer_choice()
     change_img()
     checkwin()
+    winner()
 }))
 
+
+
+
+function winner(){
+    if(player_count === 3){
+        result_display.innerHTML = `Player Wins ${player_count} - ${computer_count}`
+        player_count = 0
+        computer_count = 0
+        player_score.innerHTML = player_count
+        computer_score.innerHTML = computer_count
+    } else if(computer_count === 3){
+        result_display.innerHTML = `Computer Wins ${computer_count} - ${player_count}`
+        player_count = 0
+        computer_count = 0
+        player_score.innerHTML = player_count
+        computer_score.innerHTML = computer_count
+    }
+}
 
 function change_img(){
     if(user_choice == "Scissors"){
@@ -51,7 +70,7 @@ function checkwin(){
         result_display.innerHTML = "Tie !!!"
     }
     else if(((user_choice === "Scissors") && (computer_choice === "Paper")) || ((user_choice === "Rock") && (computer_choice === "Scissors")) || ((user_choice === "Paper") && (computer_choice === "Rock"))){
-        result_display.innerHTML = "User Win🎉🎉🎉"
+        result_display.innerHTML = "Player Win🎉🎉🎉"
         player_count += 1
         player_score.innerHTML = player_count
     }

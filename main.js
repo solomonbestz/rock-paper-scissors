@@ -31,13 +31,13 @@ possible_choices.forEach(possible_choice => possible_choice.addEventListener('cl
 
 function winner(){
     if(player_count === 3){
-        result_display.innerHTML = `Player Wins ${player_count} - ${computer_count}`
+        result_display.innerHTML = `You Won ${player_count} - ${computer_count}`
         player_count = 0
         computer_count = 0
         player_score.innerHTML = player_count
         computer_score.innerHTML = computer_count
     } else if(computer_count === 3){
-        result_display.innerHTML = `Computer Wins ${computer_count} - ${player_count}`
+        result_display.innerHTML = `Computer Won ${computer_count} - ${player_count}`
         player_count = 0
         computer_count = 0
         player_score.innerHTML = player_count
